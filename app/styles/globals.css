@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-base-100 overflow-x-hidden;
+}
+
+.navbar {
+    @apply relative flex flex-row items-center p-4 z-10;
+}
+
+.logoWrapper {
+    @apply flex flex-row items-center space-x-4;
+}
+
+.logo {
+    @apply group-hover:scale-105 transition-transform;
+}
+
+.navTitle {
+    @apply text-3xl text-base-50 lowercase drop-shadow-md;
+}
+
+.content {
+    @apply prose lg:prose-lg xl:prose-xl max-w-none;
+}
+
+.content-invert {
+    @apply prose prose-invert lg:prose-lg xl:prose-xl max-w-none;
+}
+
+.button {
+    @apply bg-primary-600 hover:bg-primary-500 transition-colors font-semibold px-6 py-4 rounded-sm w-fit text-base-50 text-xl;
+}
+
+.blur {
+    filter: url('#dropshadow');
+  }
+
+.progressBar-bg {
+  @apply fill-none stroke-base-400/50;
+  filter: url('#dropshadow') brightness(50%) saturate(50%);
+}
+
+.progressBar-stroke {
+    @apply fill-none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.gradient-header{
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-primary-700 to-primary-400 via-primary-500 text-3xl md:text-5xl md:leading-tight font-semibold;
+}
+
+.inputWrapper {
+    @apply flex flex-col space-y-1;
+}
+
+label {
+    @apply text-base-50 font-medium text-lg;
+}
+
+input[type='text'], input[type='email'], textarea, select {
+    @apply rounded-md;
+}
