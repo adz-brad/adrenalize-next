@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Performance() {
   return (
-    <section className="flex flex-col items-center my-16 lg:my-0 pb-24 space-y-8 p-4 lg:p-0">
+    <section className="flex flex-col items-center my-16 pb-16 space-y-8 p-4 lg:p-0">
 
       <h2 className="gradient-header text-center lg:text-left">
           High Performance Websites & Web Apps
@@ -89,7 +89,7 @@ export default function Performance() {
           </p>
           </div>
           <div className="not-prose pt-4 text-center">
-          <Link title="Supercharge Your Business With Adrenalize" className="button" href="/contact">
+          <Link title="Supercharge Your Business With Adrenalize" className="button mb-8" href="/contact">
             Supercharge Your Business With Adrenalize
           </Link>
           </div>
